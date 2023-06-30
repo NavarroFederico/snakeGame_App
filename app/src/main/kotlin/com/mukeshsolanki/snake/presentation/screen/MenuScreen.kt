@@ -2,6 +2,7 @@ package com.mukeshsolanki.snake.presentation.screen
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -49,6 +50,9 @@ fun MenuScreen(navController: NavHostController) {
         }
         AppButton(modifier = Modifier.width(width248dp), text = stringResource(R.string.about)) {
             navController.navigate(Screen.About.route)
+        }
+        Button(modifier = Modifier.width(width248dp),onClick = {  throw RuntimeException("Test Crash") }) {
+            
         }
     }
 }
