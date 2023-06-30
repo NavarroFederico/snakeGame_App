@@ -44,10 +44,10 @@ fun AboutScreen(navController: NavHostController) {
             verticalArrangement = Arrangement.Center
         ) {
             DisplayLarge(text = stringResource(id = R.string.app_name))
-            TitleLarge(
-                modifier = Modifier.padding(padding8dp),
-                text = BuildConfig.VERSION_NAME
-            )
+           // TitleLarge(
+             //   modifier = Modifier.padding(padding8dp),
+            //    text = BuildConfig.VERSION_NAME
+           // )
             BodyLarge(
                 modifier = Modifier.padding(padding16dp),
                 text = stringResource(R.string.about_game),
